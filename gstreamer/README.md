@@ -68,18 +68,18 @@ $
 
 So you would need to setup a remote gst sink in the host machine to see whatever it is being streamed.
 
-## To make changes
+## To make changes in code:
 
 As explained here:
   https://www.collabora.com/news-and-blog/blog/2020/03/19/getting-started-with-gstreamer-gst-build/
 
-You can do something like this to test:
+You can do something like to test:
 ```
 vim subprojects/gst-plugins-base/gst/videotestsrc/gstvideotestsrc.c
 #Go to the method gst_video_test_src_start and add the line:
 
-GST_ERROR_OBJECT (src, ""Starting to debug videotestsrc, is there an error ?");
-#This will add a runtime log with the ERROR level. For more information about debugging facilities in GStreamer, visit the following page.
+GST_ERROR_OBJECT (basesrc, "Starting to debug videotestsrc, is there an error ?");
+#This will add a runtime log with the ERROR level.
 
 # save the changes
 
