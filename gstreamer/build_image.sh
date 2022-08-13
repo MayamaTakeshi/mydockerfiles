@@ -20,5 +20,7 @@ fi
 git_user_name=$1
 git_user_email=$2
 
-DOCKER_BUILDKIT=1 docker build --rm -f Dockerfile -t takeshi:gstreamer --build-arg user_name=$(whoami) --build-arg git_user_name=$git_user_name --build-arg git_user_email=$git_user_email .
+user_name=`whoami`
+
+DOCKER_BUILDKIT=1 docker build --rm -f Dockerfile -t takeshi:gstreamer --build-arg user_name=$user_name --build-arg git_user_name=$git_user_name --build-arg git_user_email=$git_user_email .
 

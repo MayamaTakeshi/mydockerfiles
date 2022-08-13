@@ -29,7 +29,7 @@ RUN echo "set-option -g default-shell /bin/bash" >> ~/.tmux.conf
 
 ENV TERM xterm
 
-WORKDIR /home/$user_name/src/gstreamer
+WORKDIR /home/$user_name/gstreamer
 
 RUN git config --global user.email $git_user_email
 RUN git config --global user.name $git_user_name

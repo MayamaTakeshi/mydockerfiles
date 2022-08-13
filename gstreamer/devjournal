@@ -1,0 +1,297 @@
+------------------------------------------------------------------------------------------------------
+2022/08/13 takeshi:
+
+Just preserving thne output of 'meson build' (actually, 'meson setup --wipe build/') for future reference:
+
+takeshi@a027308250fc:~/src/gstreamer$ meson setup --wipe build/
+... ABRIDGED ...
+
+Subproject subprojects/glib-networking is buildable: NO (disabling)
+Program hotdoc found: NO                      
+Message: Not building documentation as hotdoc was not found
+Configuring GstDocumentedSubprojects with command                                                                                                                                                          
+Program scripts/generate_plugins_path.py found: YES (/usr/bin/python3 /home/takeshi/src/gstreamer/scripts/generate_plugins_path.py)
+Configuring GstPluginsPath.json with command      
+Message: Building subprojects: gstreamer, gst-plugins-base, gst-plugins-good, gst-plugins-bad, gst-plugins-ugly, gst-libav, gst-rtsp-server, gst-devtools, gst-integration-testsuites, gst-editing-services
+Program gst-env.py found: YES (/home/takeshi/src/gstreamer/gst-env.py)                                                                                                                                     
+Run-time dependency gstreamer-full-1.0 found: NO (tried pkgconfig and cmake)                                                                                                                               
+Program g-ir-scanner found: NO                                                                                                                                                                             
+Message: Not running python devenv tests: gst_python: false gir: false                                                                                                                                     
+Program dotnet-format found: NO                   
+Build targets in project: 1851                                                                                                                                                                             
+WARNING: Project specifies a minimum meson_version '>= 0.60.0' but uses features which were added in newer versions:
+ * 0.63.0: {'Wrap files with diff_files'}                                                            
+                                                  
+cairo 1.17.5                                                                                         
+                                                                                                     
+  Surface Backends                                                                                                                                                                                         
+    Image                   : YES                                                                    
+    Recording               : YES                 
+    Observer                : YES                 
+    Mime                    : YES                 
+    Tee                     : NO                  
+    XML                     : YES                                                                                                                                                                          
+    Xlib                    : NO        
+    Xlib Xrender            : NO                  
+    Qt                      : NO                                                                                                                                                                           
+    Quartz                  : NO                  
+    Quartz-image            : NO                  
+    XCB                     : NO                                                                                                                                                                 [208/1927]
+    Win32                   : NO                                                                                                                                                                           
+    OS2                     : NO       
+    CairoScript             : YES             
+    PostScript              : YES                                                                                                                                                                          
+    PDF                     : YES                                                                    
+    SVG                     : YES               
+    OpenGL                  : NO                  
+    OpenGL ES 2.0           : NO                                                                     
+    OpenGL ES 3.0           : NO       
+    BeOS                    : NO                  
+    DirectFB                : NO                                                                     
+    OpenVG                  : NO                  
+    DRM                     : NO              
+    Cogl                    : NO                  
+                                                                                                                                                                                                           
+  Font Backends                                                                                                                                                                                            
+    User                    : YES                                                                                                                                                                          
+    FreeType                : YES                                                                                                                                                                          
+    Fontconfig              : YES                                                                                                                                                                          
+    Win32                   : NO                                                                     
+    Quartz                  : NO                                                                     
+                                                  
+  Functions                                   
+    PNG functions           : YES                 
+    GLX functions           : NO                                                                                                                                                                           
+    WGL functions           : NO                                                                     
+    EGL functions           : NO                  
+    X11-xcb                 : NO   
+    XCB-shm                 : NO                                                                                                                                                                           
+                                                                                                                                                                                                           
+  Features and Utilities                                                                                                                                                                                   
+    cairo-trace:            : YES                                                                                                                                                                          
+    cairo-script-interpreter: YES                 
+    API reference           : NO                                                                                                                                                                           
+                                                                                                     
+libdv 1.0.0                                                                                          
+                                                  
+    YUV format            : YUY2                                                                     
+    assembly optimizations: YES                                                                      
+                                                                                                                                                                                                           
+fontconfig 2.13.94                                                                                   
+                                                  
+  General                                         
+    Documentation: NO                             
+    NLS          : YES                            
+    Tests        : YES                                                                                                                                                                                     
+    Tools        : YES                  
+                                                  
+freetype2                                                                                                                                                                                                  
+                                                  
+  Operating System                                
+    OS      : linux           
+  Used Libraries                       
+    Zlib    : external                        
+    Bzip2   : no                                                                                                                                                                                           
+    Png     : yes                                                                                    
+    Harfbuzz: no                                
+    Brotli  : no                                  
+                                                                                                     
+gst-editing-services 1.21.0.1          
+                                                  
+    Plugins: nle, ges                                                                                
+                                                  
+gst-plugins-bad 1.21.0.1                      
+                                                  
+    Plugins               : accurip, adpcmdec, adpcmenc, aiff, asfmux, audiobuffersplit, audiofxbad, audiomixmatrix, audiolatency, audiovisualizers, autoconvert, bayer, camerabin, codecalpha,
+                            coloreffects, debugutilsbad, dvbsubenc, dvbsuboverlay, dvdspu, faceoverlay, festival, fieldanalysis, freeverb, frei0r, gaudieffects, gdp, geometrictransform, id3tag, inter,
+                            interlace, ivfparse, ivtc, jp2kdecimator, jpegformat, rfbsrc, midi, mpegpsdemux, mpegpsmux, mpegtsdemux, mpegtsmux, mxf, netsim, rtponvif, pcapparse, pnm, proxy,
+                            legacyrawparse, removesilence, rist, rtmp2, rtpmanagerbad, sdpelem, segmentclip, siren, smooth, speed, subenc, switchbin, timecode, transcode, videofiltersbad,
+                            videoframe_audiolevel, videoparsersbad, videosignal, vmnc, y4mdec, decklink, dvb, fbdevsink, ipcpipeline, nvcodec, shm, avtp, closedcaption, dash, fdkaac, hls, microdns,
+                            openjpeg, opusparse, sctp, smoothstreaming, ttmlsubs                     
+    (A)GPL license allowed: False                                                                    
+                                                  
+gst-plugins-base 1.21.0.1                     
+                                                  
+    Plugins: adder, app, audioconvert, audiomixer, audiorate, audioresample, audiotestsrc, compositor, encoding, gio, overlaycomposition, pbtypes, playback, rawparse, subparse, tcp, typefindfunctions,
+             videoconvertscale, videorate, videotestsrc, volume, ogg, opus, pango, vorbis
+                                                  
+gst-plugins-good 1.21.0.1          
+                                                                                                                                                                                                           
+    Plugins: alpha, alphacolor, apetag, audiofx, audioparsers, auparse, autodetect, avi, cutter, navigationtest, debug, deinterlace, dtmf, effectv, equalizer, flv, flxdec, goom, goom2k1, icydemux,
+             id3demux, imagefreeze, interleave, isomp4, alaw, mulaw, level, matroska, monoscope, multifile, multipart, replaygain, rtp, rtpmanager, rtsp, shapewipe, smpte, spectrum, udp, videobox,
+             videocrop, videofilter, videomixer, wavenc, wavparse, y4menc, ossaudio, oss4, video4linux2, adaptivedemux2, cairo, jpeg, lame, dv, png, soup
+                                                  
+gst-plugins-ugly 1.21.0.1                                                                                                                                                                                  
+                                                                                                     
+    Plugins               : asf, dvdlpcmdec, dvdsub, realmedia, xingmux
+    (A)GPL license allowed: False                 
+                                                                                                     
+gstreamer 1.21.0.1                                                                                   
+                                                                                                                                                                                                           
+    Plugins: coreelements, coretracers                                                               
+                                                  
+harfbuzz 2.8.2                                    
+                                                  
+  Directories                                     
+    prefix           : /usr/local                                                                                                                                                                          
+    bindir           : bin              
+    libdir           : lib/x86_64-linux-gnu
+    includedir       : include                                                                                                                                                                             
+    datadir          : share                      
+                                                  
+  Unicode callbacks (you want at least one)                                                                                                                                                      [104/1927]
+    Builtin          : YES                                                                                                                                                                                 
+    Glib             : YES             
+    ICU              : NO                     
+                                                                                                                                                                                                           
+  Font callbacks (the more the merrier)                                                              
+    FreeType         : YES                      
+                                                  
+  Dependencies used for command-line utilities                                                       
+    Cairo            : YES             
+    Chafa            : NO              
+                                                                                                     
+  Additional shapers                          
+    Graphite2        : NO                     
+                                                  
+  Platform shapers (not normally needed)                                                             
+    CoreText         : NO               
+    DirectWrite      : NO                                                                            
+    GDI/Uniscribe    : NO          
+                                                  
+  Other features                                                                                     
+    Documentation    : NO                                                                            
+    GObject bindings : YES                    
+    Introspection    : NO                     
+    Experimental APIs: NO          
+                                                                                                     
+  Testing                          
+    Tests            : NO                         
+    Benchmark        : NO          
+                                                                                                                                                                                                           
+json-glib 1.6.6                    
+                                                  
+  Directories                      
+    prefix       : /usr/local                 
+    includedir   : /usr/local/include                                                                                                                                                                      
+    libdir       : /usr/local/lib/x86_64-linux-gnu                                                   
+    datadir      : /usr/local/share
+                                                  
+  Build                                                                                              
+    Introspection: YES                                                                               
+    Documentation: NO                                                                                                                                                                                      
+    Manual pages : NO                                                                                
+    Tests        : YES                            
+                                                  
+opus 1.3.1-97-g6b6035ae                        
+                                                  
+  Compiler support                                                                                                                                                                                             C99 var arrays                 : YES
+    C99 lrintf                     : YES
+    Use alloca                     : NO (using C99 variable-size arrays instead)                                                                                                                           
+                                                  
+  Optimizations                               
+    Floating point support         : YES                                                                                                                                                          [52/1927]
+    Fast float approximations      : NO                                                                                                                                                                    
+    Fixed point debugging          : NO
+    Inline assembly optimizations  : none     
+    External assembly optimizations: none                                                                                                                                                                  
+    Intrinsics optimizations       : SSE, SSE2, SSE4.1, AVX
+    Run-time CPU detection         : SSE4.1, AVX
+                                                  
+  General configuration                                                                              
+    Custom modes                   : NO
+    Assertions                     : NO
+    Hardening                      : YES                                                             
+    Fuzzing                        : NO       
+    Check ASM                      : NO       
+    API documentation              : NO
+    Extra programs                 : YES                                                             
+    Tests                          : YES
+                                                                                                     
+orc 0.4.32                         
+                                                  
+  Backends                                                                                           
+    SSE             : YES                                                                            
+    MMX             : YES                     
+    NEON            : YES                     
+    MIPS            : YES          
+    c64x            : YES                                                                            
+    Altivec         : YES          
+                                                  
+  Build options                    
+    Tools           : YES                                                                                                                                                                                  
+    Tests           : YES          
+    Examples        : YES          
+    Benchmarks      : YES          
+    Documentation   : NO  disabled            
+    Orc-test library: YES                                                                                                                                                                                  
+                                                                                                     
+gstreamer-full 1.21.0.1            
+                                                  
+  Build options                                                                                      
+    gstreamer-full library    : NO                                                                   
+    Tools                     : gst-inspect, gst-stats, gst-typefind, gst-launch, gst-device-monitor, gst-discoverer, gst-play, gst-validate, gst-validate-media-check, gst-validate-images-check,
+                                gst-validate-rtsp-server, gst-validate-transcoding, ges-launch
+                                                  
+  Subprojects                      
+    FFmpeg                    : YES 22 warnings
+    avtp                      : YES
+    cairo                     : YES 1 warnings                                                                                                                                                                 dv                        : YES
+    expat                     : YES
+    fdk-aac                   : YES                                                                                                                                                                        
+    fontconfig                : YES 7 warnings
+    freetype2                 : YES 5 warnings
+    fribidi                   : YES
+    gi-docgen                 : NO python3 is missing modules: jinja2, markdown, markupsafe, pygments, toml, typogrify
+    gl-headers                : YES
+    glib                      : YES 1 warnings
+    glib-networking           : NO Problem encountered: No TLS backends enabled. Please enable at least one TLS backend
+    gperf                     : YES
+    gst-devtools              : YES 1 warnings
+    gst-editing-services      : YES
+    gst-examples              : NO Pkg-config binary for machine 1 not found. Giving up.
+    gst-integration-testsuites: YES
+    gst-libav                 : YES
+    gst-omx                   : NO Feature 'omx' disabled
+    gst-plugins-bad           : YES 1 warnings
+    gst-plugins-base          : YES 1 warnings
+    gst-plugins-good          : YES
+    gst-plugins-rs            : NO Feature 'rs' disabled
+    gst-plugins-ugly          : YES
+    gst-python                : NO Subproject "subprojects/pygobject" required but not found.
+    gst-rtsp-server           : YES
+    gstreamer                 : YES 1 warnings
+    gstreamer-sharp           : NO Feature 'sharp' disabled
+    gstreamer-vaapi           : NO Feature 'vaapi' disabled
+    harfbuzz                  : YES 6 warnings
+    json-glib                 : YES 1 warnings
+    lame                      : YES
+    libdrm                    : NO Pkg-config binary for machine 1 not found. Giving up.
+    libffi                    : YES
+    libjpeg-turbo             : YES
+    libmicrodns               : YES
+    libnice                   : NO Problem encountered: Either GnuTLS or OpenSSL is required as crypto library, but neither was found
+    libopenjp2                : YES
+    libpng                    : YES
+    libpsl                    : YES
+    libsoup                   : YES 5 warnings
+    libsoup3                  : NO Neither a subproject directory nor a libsoup3.wrap file was found.
+    libva                     : NO Neither a subproject directory nor a libva.wrap file was found.
+    libxml2                   : YES
+    ogg                       : YES
+    openh264                  : NO Program 'nasm' not found or not executable
+    openssl                   : NO Neither a subproject directory nor a openssl.wrap file was found.
+    opus                      : YES 1 warnings
+    orc                       : YES 1 warnings
+    pango                     : YES
+    pcre                      : YES
+    pixman                    : YES
+    pygobject                 : NO
+                                Git command failed: ['/usr/bin/git', '-c', 'advice.detachedHead=false', 'clone', '--depth', '1', '--branch', 'master', 'https://gitlab.gnome.org/GNOME/gobject-introspection.git', 'gobject-introspection']
+    sqlite3                   : YES
+    tinyalsa                  : NO Neither a subproject directory nor a tinyalsa.wrap file was found.
+    vorbis                    : YES
+
+Found ninja-1.10.1 at /usr/bin/ninja
+takeshi@a027308250fc:~/src/gstreamer$ 
+

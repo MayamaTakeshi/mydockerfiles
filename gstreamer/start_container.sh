@@ -19,5 +19,7 @@ fi
 
 gstreamer_source_folder=$1
 
+user_name=`whoami`
 
-docker run --rm -it -v /etc/localtime:/etc/localtime:ro -v $gstreamer_source_folder/:/home/`whoami`/src/gstreamer takeshi:gstreamer 
+
+docker run --rm -it -v /etc/localtime:/etc/localtime:ro -v $gstreamer_source_folder/:/home/$user_name/gstreamer $user_name:gstreamer 
